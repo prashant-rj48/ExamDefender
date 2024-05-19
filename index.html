@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Defender</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="website icon" type="jpg" href="D:\Programs\My site\Logo for defender.jpg">
+    
+    <style>
+
+/*Border animation*/
+    
+.site-header {
+        border: 10px solid;
+        border-image: linear-gradient(#38eeff, #af24dd) 1;
+        animation: anim-border 2s ease-in infinite;
+}
+
+@keyframes anim-border {
+    50%{
+        border-image: linear-gradient(360deg, #38eeff, #af24dd) 1;
+    }
+}
+
+/*Border animation ends here*/
+
+
+
+
+
+
+
+
+
+/*   Heading and hover animation starts here*/
+/*......................................................................................................................................*/
+    
+.site-header {
+    background-color: black; /* Set the background color of the header to black */
+    padding: 180px 0; /* Add vertical padding to the header */
+    text-align: center; /* Align text to center */
+}
+
+
+
+/* Navigation bar css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    width: 99vw;
+    height: 4vw;
+    position: absolute;
+    top: 5.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #31a9bb;
+    list-style-type: none; /* Added to remove bullet points */
+}
+
+ul li {
+    display: inline-block;
+    position: relative; /* Add position relative */
+}
+
+ul li a {
+    color: black;
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 1px; /* Added padding to the links */
+}
+
+ul li a div {
+    display: block;
+    padding: 1.5vw;
+    position: relative; /* Add position relative */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+ul li a div:before,
+ul li a div:after {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blueviolet;
+    color: aliceblue;
+    padding: 1.5vw;
+    transition: transform 0.3s; /* Simplify transition */
+}
+
+ul li a div:before {
+    transform: translateY(100%);
+}
+
+ul li a div:hover:before {
+    transform: translateY(0%);
+}
+
+ul li a div:after {
+    transform: translateY(-100%);
+}
+
+ul li a div:hover:after {
+    transform: translateY(-200%);
+}
+/* Navigation bar ends here */
+
+
+
+
+
+
+.button{
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+.button{
+            --border-right: 6px solid; /* Corrected */
+            --text-stroke-color: rgba(255,255,255,0.6);
+            --animation-color: #53eeff;
+            --fs-size: 2em;
+            letter-spacing: 3px;
+            text-decoration: none;
+            font-size: var(--fs-size);
+            font-family: "Arial";
+            position: relative;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-text-stroke: 1px var(--text-stroke-color);
+    }
+     
+.hover-text{
+            position: absolute;
+            box-sizing: border-box;
+            content: attr(data-text);
+            color: var(--animation-color);
+            width: 0%;
+            inset: 0;
+            border-right: var(--border-right);
+            border-color: var(--animation-color); /* Added */
+            overflow: hidden;
+            transition: 0.5s;
+            -webkit-text-stroke: 1px var(--animation-color);
+    }
+.button:hover .hover-text{
+            width: 100%;
+            filter: drop-shadow(0 0 23px var(--animation-color));
+        }
+.container {
+    max-width: 100px; /* Set maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 100px; /* Add horizontal padding to the content */
+    
+}
+
+/*Heading and hover animation ends here*/
+/*......................................................................................................................................*/
+
+
+
+
+
+/* COURSES details starts here*/
+
+ .image-1{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 20%;
+  }
+  .image-2{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 20%;
+  }
+  .image-3{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 20%;
+  }
+  .image-4{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 20%;
+  }
+  .image-5{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 20%;
+  }
+  .image-6{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 20%;
+  }
+  .image-11{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 30%;
+  }
+  .image-22{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 30%;
+  }
+  .image-33{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+    width: 30%;
+  }
+
+
+
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <header class="site-header">
+
+        <!--Nevigation bar html-->
+
+        <ul>
+            <li><a href="D:\Programs\My site\index.html"><div title="HOME">HOME</div></a></li>
+            <li><a href="#About"><div title="ABOUT">ABOUT</div></a></li>
+            <li><a href="D:\Programs\My site\courses\Courses.html"><div title="COURSES">COURSES</div></a></li>
+            <li><a href="D:\Programs\My site\opportunity\Opportunity.html"><div title="OPPORTUNITY">OPPORTUNITY</div></a></li>
+            <li><a href="#Creator's details"><div title="CREATOR">CREATOR</div></a></li>
+        </ul>
+        <!--Nevi bar ends here-->
+        
+
+
+        <div class="container">
+            <button class="button" data-text="Awesome">
+                    <span class="actual-text" width="40">
+                        &nbsp;Exam Defender&nbsp;
+                    </span>
+                    <span class="hover-text" aria-hidden="true">
+                        &nbsp;Exam Defender&nbsp;
+                    </span>
+                </button>
+            
+            <img src="D:\Programs\My site\give-me-logo-of-cartoon-and-technical-books (1).png" align="center" width="200" >
+        </div>
+       
+    </header>
+    <br>
+    <br>
+    <br>
+    <h3 style="color:rgb(232, 103, 241);" align="center"> Stay with us! We're adding new content every day!</h3><br>
+    <br>
+    <h1 align="center"> We are providing to you free study material's link</h1>
+
+
+
+
+
+
+    <!--Giving details about COURSES on main page-->
+    <main >
+        <br><br><br>
+        <h3 align="center" style="font-size: 40px;"><b>Courses</b></h3><br>
+        <h4 align="center">Go to course page through navigation bar</h4><br>
+        <h4 align="center">And get free content about these and more</h4>
+        <br><br>
+
+        <center><strong>
+        <img src="D:\Programs\My site\courses\UPSC.png" alt="UPSC" class="image-1">                        <img src="D:\Programs\My site\courses\JEE M + ADV.png" alt="JEE" class="image-2"><br>
+        <br>
+        <img src="D:\Programs\My site\courses\NEET.png" alt="NEET" class="image-3">                        <img src="D:\Programs\My site\courses\Ethical hacking.png" alt="Hacking" class="image-4"><br>
+         <br>
+        <img src="D:\Programs\My site\courses\HTML + CSS.png" alt="html + css" class="image-5">                        <img src="D:\Programs\My site\courses\SQL.png" alt="SQl" class="image-6">
+        </center></strong>
+
+    </main><br><br><br>
+
+<!--Courses ends here-->
+
+
+
+
+<!--Opportunity informations-->
+
+<main >
+    <br><br><br>
+    <h3 align="center" style="font-size: 40px;"><b>OPPORTUNITY</b></h3><br>
+    <h4 align="center">Go to OPPORTUNITY page through navigation bar</h4><br>
+    <h4 align="center">And get free content about these and more</h4>
+    <br><br>
+
+    <center><strong>
+    <img src="D:\Programs\My site\internship logo.png" alt="internship" class="image-11">                        <img src="D:\Programs\My site\JOBS.png" alt="JOBS" class="image-22"><br>
+
+      <img src="D:\Programs\My site\Certificate.png" alt="NEET" class="image-33">                        
+    </center></strong>
+
+</main><br><br><br>
+
+
+
+
+
+
+
+    <!--This content connected with 'ABOUT' button of navigation bar-->
+    <section id="About">
+        <h3 align="center" style="font-size: 40px;"><b>About</b></h3><br>
+        <ol style="font-size: 20px;">
+            <li>Exam Defender, your study companion true, delivering knowledge, just for you."</li><br>
+            <li>Unlock Your Academic Potential with Exam Defender: Your Gateway to Free Study Materials</li><br>
+            <li>Are you ready to ace those exams? Because Exam Defender's got all the right materials to sweep you off your feet</li><br>
+            <li >Our mission: To provide students with easy access to a wide range of study materials to support their academic journey.</li><br>
+            <li>Comprehensive Study Materials: Access a vast repository of study materials covering a wide range of exams, from UPSC Civil Services to JEE and NEET.
+            </li><br>
+            <li>Expertly Curated Content: Benefit from meticulously selected resources tailored to the syllabi and requirements of each exam.</li><br>
+            <li>Free Access: Enjoy unlimited access to all study materials without any subscription fees or hidden costs.</li><br>
+            <li>Diversity of resources: We offer links to a diverse array of study materials including textbooks, lecture notes, practice exams, and more.</li><br>
+            <li>Accessibility: Our platform is designed to be user-friendly, making it easy for students to find the resources they need quickly and efficiently.</li><br>
+            <li>Constant updates: We regularly update our collection of study materials to keep pace with changes in academic curricula and advancements in knowledge.</li><br>
+        </ol>
+    </section><br><br><br>
+   <HR>
+   <br>
+   <br>
+
+
+
+
+
+    <!--Creators details -->
+    <footer id="Creator's details">
+        <h2 align="center">CREATOR:- PRASHANT</h2>
+        <h4 align="center">Contect us with given options</h4>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/prashant_rj48/">
+            <img src="D:\Programs\Flask Tutorial\IITGN site\insta 2.png" alt="instagram" width="150" height="100">
+        </a>
+
+        <a href="https://www.facebook.com/prashant.kumarmahawar">
+            <img src="D:\Programs\Flask Tutorial\IITGN site\facebook 2.png" alt="facebook" width="150" height="100">
+        </a>
+        
+        <a href="mailto:pmkumar980@gmail.com">
+            <img src="D:\Programs\Flask Tutorial\IITGN site\email 2.png" alt="Email" width="150" height="100">
+        </a>
+
+        <a href="#">
+            <img src="D:\Programs\Flask Tutorial\IITGN site\linkedin 2.png" alt="Email" width="150" height="100">
+        </a>
+    </footer>
+</body>
+</html>
